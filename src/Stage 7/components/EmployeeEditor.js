@@ -30,7 +30,7 @@ class EmployeeEditor extends Component {
   }
 
   save() {
-    this.state.originalEmployee.updateName(this.state.employeeName);
+    this.state.originalEmployee.updateName(this.state.employee.name);
     this.state.originalEmployee.updatePhone(this.state.employee.phone);
     this.state.originalEmployee.updateTitle(this.state.employee.title);
     this.setState({ notModified: true });
